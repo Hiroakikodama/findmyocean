@@ -1,0 +1,2 @@
+class DiaryImagesController < ApplicationController
+end
