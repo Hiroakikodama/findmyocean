@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::Base
   before_action :authenticate_user!, except: [:home]
   before_action :configure_permitted_parameters, if: :devise_controller?
-  protected_from_forgery with: :excption
+  protect_from_forgery with: :exception
 
   protected
   def after_sign_in_path_for(resource)
