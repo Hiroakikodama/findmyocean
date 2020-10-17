@@ -1,0 +1,13 @@
+<div>
+  <div>
+    <span><%= image_tag(asset_path('logo.jpg')) %></span>
+    <h4>このサイトは全ての釣り人がより釣りを楽しむためのサイトです。<br>
+        釣果日記、自分だけの魚図鑑の完成など釣りを楽しむ上で知りたい情報を1つにまとめ、<br>
+        より充実した趣味の時間の助けになれば幸いです。</h4>
+  </div>
+  <div>
+    <%= link_to "新規登録", new_user_registration_path, class: "" %>
+    <%= link_to "ログイン", new_user_session_path, class: "" %>
+    <%= link_to "ゲストログイン", users_guest_sign_in_path, class: "" %>
+  </div>
+</div>
